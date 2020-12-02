@@ -1,29 +1,26 @@
 # minifyJSON
-minifyJSON is a function which strips all whitespace (outside double-quotes) from a JSON string. An Ashiva Component.
+The function `minifyJSON(json)` minifies any JSON string.
 
-# SVG to Data URI
-
-The function `SVGtoDataURI(svg)` converts any SVG into a **Data URI**.
-
-Before it does so, it verifies that the string it has been given to process is a **valid SVG**.
+Before it does so, it verifies that the string it has been given to process is a **valid JSON**.
 
 ______
 
 ## Step 1
 
-The function `SVGtoDataURI(svg)` verifies that the string passed to the function:
+The function `minifyJSON(json)` verifies that the string passed to the function:
 
- - has a valid **SVG Namespace**
- - represents **well-formed XML**
+ - represents a valid **JSON** string
 
-If either or both conditions are not met, the `SVGtoDataURI(svg)` function will return a verbose error detailing how the string may be fixed.
+If this condition is not met, the `minifyJSON(json)` function will return a verbose error detailing how the string may be fixed.
 
 ## Step 2
 
-If both the conditions above are met, the `SVGtoDataURI(svg)` function returns the validated SVG as a **Data URI**.
+If the condition above is met, the `minifyJSON(json)` function returns the validated JSON as a **minified JSON string**.
 
 _____
 
-## `SVGtoDataURI(svg)` Function
+## `minifyJSON(json)` Function
+
+```
 
 ```
